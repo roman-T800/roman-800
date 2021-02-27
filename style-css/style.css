@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+}
+body{
+    font-family: 'Rayeway', sans-serif;
+}
+.logo{
+    background-color: black;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.graficlogo{
+    margin-top: 0;
+    width: 200px;
+    height: 140px;
+    box-sizing: border-box;
+}
+nav{
+    margin: auto;
+    width: 700px;
+    height: 35px;
+}
+.topnav{
+    min-width: 100%;
+    background-color:white;
+    font-size: 14px;
+    margin-top: 35px;
+}
+.topnav a{
+    color:black;
+    text-align:center;
+    padding: 14px 16px;
+    font-size: 15px;
+}
+.topnav a:hover{
+    border-bottom: 2px solid #000;
+}
+.topnav .icon{
+    display:none;
+}
+.photo{
+    max-width: 100%;
+}
+h2 p{
+    margin: 10px;;
+}
+.mv-100{
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.adventages_container{
+    display: flex;
+    justify-content: center;
+}
+.adventages{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.adventages_item{
+    width: 100%;
+}
+.content_container{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 80%;
+    margin-bottom: 90px;
+    padding:45px 45px 70px 45px;
+    box-shadow: 4px 4px 5px rgba(172, 45, 45, 0.4)
+    /*border:2px solid rgba(250,50,50, 0.4)*/
+}
+.card-title{
+    font-weight:500;
+    font-size:24px;
+    margin-bottom:10px;
+}
+.card-text{
+    font-size:16px;
+}
+.card-image{
+    width: 100%;
+    margin-bottom:10px; 
+}
+.logo-01{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+} 
+footer a{
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+footer nav a:hover{
+    border-bottom: 2px solid white;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+.social img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.social img:hover{
+    border-radius: 100%;
+}
+
+.gallery{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.photo-itm{
+    width: 40%;
+    margin-left: 10px;
+}
+.photo-itm img{
+    box-sizing: border-box;
+    max-width: 100%;
+    opacity:0.85;
+}
+.photo-itm img:hover{
+    opacity: 1;
+}
+
+.blog-container{
+background: #fafafa;
+border-radius: 5px;
+box-shadow: rgba(0,0,0,.2) 0 4px 2px -2px;
+font-weight: 100;
+margin: 48px auto;
+width: 50rem;
+}
+.blog-container a:hover{
+    border-color: #ff4d4d;
+    color:#ff4d4d;
+}
+.blog-cover{
+    background: url(../img/genshin_logo_black.jpg);
+    background-size: cover;
+    border-radius: 5px 5 px 0 0 ;
+    height: 15rew;
+    box-shadow: inset rgba(0,0,0,.2) 0 64px 64px 16px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .topnav a:not(:first-child){
+        display: none;
+    }
+    .topnav a.icon{
+        float:right;
+        margin-top:-17px ;
+        display: block;
+        color: block;
+    }
+    nav{
+        width: 100%;
+    }
+    .topnav.responsive{
+        position: relative;
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top:0;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .adventages_item{
+        width: 40%;
+    }
+    .photo-itm{
+        width: 45%;
+        margin-left: 10px;
+    }
+    .content{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 420px){
+    .adventages{
+        flex-direction: column;
+    } 
+    .adventages_item{
+        width: 100%;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+    }
+    .blog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery{
+        width: auto;
+        margin: auto;
+    }
+    .photo-itm{
+        widows: 70%;
+        margin: 0 auto;
+    }
+}
